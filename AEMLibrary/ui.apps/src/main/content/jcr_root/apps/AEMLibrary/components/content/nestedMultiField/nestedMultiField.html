@@ -1,0 +1,10 @@
+<div>Nested Multifield</div>
+<sly data-sly-use.nested = "com.aem.community.core.models.NestedMultiField"/>
+<sly data-sly-list.level1 = "${nested.level1Nodes}">
+
+<div>${level1.level1Name}</div>
+<sly data-sly-list.level2 = "${level1.level2Nodes}">
+<div>${level2.level2Name}</div>
+<div>${level2.level2Details}</div>
+
+</sly>
