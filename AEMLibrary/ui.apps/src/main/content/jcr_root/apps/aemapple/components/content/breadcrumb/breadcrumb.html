@@ -1,0 +1,14 @@
+ <div data-sly-test="${(wcmmode.edit || wcmmode.preview)}"  class="cq-placeholder ${classAppend}" data-emptytext="Edit ${component.properties.jcr:title}"></div>
+<sly data-sly-use.clientLib="${'/libs/granite/sightly/templates/clientlib.html'}"/>
+<sly data-sly-call="${clientLib.css @categories='applebreadcrumb'}"/>
+<sly data-sly-use.breadcrumb = "com.aemapple.com.core.models.BreadCrumb">
+
+
+		<ul class="breadcrumb">
+        		<li data-sly-repeat = "${breadcrumb.navList}">${item}</li>
+        </ul>
+
+
+
+
+</sly>

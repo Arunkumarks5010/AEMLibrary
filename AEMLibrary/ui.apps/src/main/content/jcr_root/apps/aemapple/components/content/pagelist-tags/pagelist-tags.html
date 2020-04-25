@@ -1,0 +1,9 @@
+ <div data-sly-test="${(wcmmode.edit || wcmmode.preview)}"  class="cq-placeholder ${classAppend}" data-emptytext="Edit ${component.properties.jcr:title}"></div>
+<sly data-sly-use.page = "com.aemapple.com.core.models.PageListUsingTagManager">
+<h1> Selected Tags : ${properties.tags} </h1>
+<h3> List of Pages tagged </h3>
+<ul data-sly-list.key=${page.pageDetails}>
+	<div><b>Page Title</b> : ${key}, <b>Page Path </b> : ${page.pageDetails[key]}</div>
+</ul>
+</sly>
+
