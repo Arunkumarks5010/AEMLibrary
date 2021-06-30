@@ -24,7 +24,7 @@ import com.aemlibrary.com.core.config.LinkRewriterConfig;
 @Component
 @Designate( ocd = LinkRewriterConfig.class)
 public class LinkRewriterTransformer implements Transformer {
-	
+	//editing
 	private final Logger LOG = LoggerFactory.getLogger(LinkRewriterTransformer.class);
 	
 	private ContentHandler contentHandler;
